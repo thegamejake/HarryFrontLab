@@ -9,7 +9,7 @@ import { Mesh } from 'three'
 const RotatingBox: React.FC<{ position: [number, number, number], color: string }> = ({ position, color }) => {
   const meshRef = useRef<Mesh>(null!)
   
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     meshRef.current.rotation.x += delta
     meshRef.current.rotation.y += delta * 0.5
   })

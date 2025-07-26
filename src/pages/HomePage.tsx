@@ -104,7 +104,7 @@ const HomePage: React.FC = () => {
             <ArrowRight className="w-5 h-5 ml-2" />
           </Link>
           <a
-            href="https://github.com"
+            href="https://github.com/thegamejake/HarryFrontLab"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary text-lg px-8 py-3"
@@ -128,7 +128,7 @@ const HomePage: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => {
+          {features.map((feature) => {
             const Icon = feature.icon
             
             return (
