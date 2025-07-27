@@ -8,6 +8,7 @@ import ChartsPage from './pages/ChartsPage'
 import ThreeDPage from './pages/ThreeDPage'
 import InteractivePage from './pages/InteractivePage'
 import CodeEditorPage from './pages/CodeEditorPage'
+import LunchLotteryPage from './pages/LunchLotteryPage'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <Route path="/3d" element={<ThreeDPage />} />
               <Route path="/interactive" element={<InteractivePage />} />
               <Route path="/code-editor" element={<CodeEditorPage />} />
+              <Route path="/lunch-lottery" element={<LunchLotteryPage />} />
             </Routes>
           </motion.div>
         </Layout>
