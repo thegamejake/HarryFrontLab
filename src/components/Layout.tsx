@@ -12,7 +12,8 @@ import {
   X,
   Github,
   Zap,
-  Utensils
+  Utensils,
+  Gamepad2
 } from 'lucide-react'
 
 interface LayoutProps {
@@ -31,6 +32,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     { name: '互動元件', href: '/interactive', icon: MousePointer },
     { name: '程式編輯器', href: '/code-editor', icon: Code2 },
     { name: '美食迷宮飯', href: '/lunch-lottery', icon: Utensils },
+    { name: '寶可夢屬性表', href: '/pokemon-type-chart', icon: Gamepad2 },
   ]
 
   return (
