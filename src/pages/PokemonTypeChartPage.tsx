@@ -42,6 +42,84 @@ const TYPE_NAMES_ZH: Record<string, string> = {
   steel: '鋼', fairy: '妖精'
 }
 
+const POKEMON_NAMES_ZH: Record<string, string> = {
+  '妙蛙種子': 'bulbasaur', '妙蛙草': 'ivysaur', '妙蛙花': 'venusaur',
+  '小火龍': 'charmander', '火恐龍': 'charmeleon', '噴火龍': 'charizard',
+  '傑尼龜': 'squirtle', '卡咪龜': 'wartortle', '水箭龜': 'blastoise',
+  '綠毛蟲': 'caterpie', '鐵甲蛹': 'metapod', '巴大蝶': 'butterfree',
+  '獨角蟲': 'weedle', '鐵殼蛹': 'kakuna', '大針蜂': 'beedrill',
+  '波波': 'pidgey', '比比鳥': 'pidgeotto', '比雕': 'pidgeot',
+  '小拉達': 'rattata', '拉達': 'raticate',
+  '烈雀': 'spearow', '大嘴雀': 'fearow',
+  '阿柏蛇': 'ekans', '阿柏怪': 'arbok',
+  '皮卡丘': 'pikachu', '雷丘': 'raichu',
+  '穿山鼠': 'sandshrew', '穿山王': 'sandslash',
+  '尼多蘭': 'nidoran-f', '尼多娜': 'nidorina', '尼多后': 'nidoqueen',
+  '尼多朗': 'nidoran-m', '尼多力諾': 'nidorino', '尼多王': 'nidoking',
+  '皮皮': 'clefairy', '皮可西': 'clefable',
+  '六尾': 'vulpix', '九尾': 'ninetales',
+  '胖丁': 'jigglypuff', '胖可丁': 'wigglytuff',
+  '超音蝠': 'zubat', '大嘴蝠': 'golbat',
+  '走路草': 'oddish', '臭臭花': 'gloom', '霸王花': 'vileplume',
+  '派拉斯': 'paras', '派拉斯特': 'parasect',
+  '毛球': 'venonat', '摩魯蛾': 'venomoth',
+  '地鼠': 'diglett', '三地鼠': 'dugtrio',
+  '喵喵': 'meowth', '貓老大': 'persian',
+  '可達鴨': 'psyduck', '哥達鴨': 'golduck',
+  '猴怪': 'mankey', '火爆猴': 'primeape',
+  '卡蒂狗': 'growlithe', '風速狗': 'arcanine',
+  '蚊香蝌蚪': 'poliwag', '蚊香君': 'poliwhirl', '蚊香泳士': 'poliwrath',
+  '凱西': 'abra', '勇基拉': 'kadabra', '胡地': 'alakazam',
+  '腕力': 'machop', '豪力': 'machoke', '怪力': 'machamp',
+  '喇叭芽': 'bellsprout', '口呆花': 'weepinbell', '大食花': 'victreebel',
+  '瑪瑙水母': 'tentacool', '毒刺水母': 'tentacruel',
+  '小拳石': 'geodude', '隆隆石': 'graveler', '隆隆岩': 'golem',
+  '小火馬': 'ponyta', '烈焰馬': 'rapidash',
+  '呆呆獸': 'slowpoke', '呆殼獸': 'slowbro',
+  '小磁怪': 'magnemite', '三合一磁怪': 'magneton',
+  '大蔥鴨': 'farfetchd',
+  '嘟嘟': 'doduo', '嘟嘟利': 'dodrio',
+  '小海獅': 'seel', '白海獅': 'dewgong',
+  '臭泥': 'grimer', '臭臭泥': 'muk',
+  '貝殼獸': 'shellder', '刺甲貝': 'cloyster',
+  '鬼斯': 'gastly', '鬼斯通': 'haunter', '耿鬼': 'gengar',
+  '大岩蛇': 'onix',
+  '素利普': 'drowzee', '素利拍': 'hypno',
+  '大鉗蟹': 'krabby', '巨鉗蟹': 'kingler',
+  '霹靂電球': 'voltorb', '頑皮雷彈': 'electrode',
+  '蛋蛋': 'exeggcute', '椰蛋樹': 'exeggutor',
+  '卡拉卡拉': 'cubone', '嘎啦嘎啦': 'marowak',
+  '飛腿郎': 'hitmonlee', '快拳郎': 'hitmonchan',
+  '瓦斯彈': 'koffing', '雙彈瓦斯': 'weezing',
+  '獨角犀牛': 'rhyhorn', '鑽角犀獸': 'rhydon',
+  '吉利蛋': 'chansey',
+  '蔓藤怪': 'tangela',
+  '袋獸': 'kangaskhan',
+  '海馬': 'horsea', '飛刺海馬': 'seadra',
+  '角金魚': 'goldeen', '金魚王': 'seaking',
+  '海星星': 'staryu', '寶石海星': 'starmie',
+  '魔牆人偶': 'mr-mime',
+  '凱羅斯': 'pinsir',
+  '肯泰羅': 'tauros',
+  '鯉魚王': 'magikarp', '暴鯉龍': 'gyarados',
+  '拉普拉斯': 'lapras',
+  '百變怪': 'ditto',
+  '伊布': 'eevee', '水伊布': 'vaporeon', '雷伊布': 'jolteon', '火伊布': 'flareon',
+  '多邊獸': 'porygon',
+  '菊石獸': 'omanyte', '多刺菊石獸': 'omastar',
+  '化石盔': 'kabuto', '鐮刀盔': 'kabutops',
+  '化石翼龍': 'aerodactyl',
+  '卡比獸': 'snorlax',
+  '急凍鳥': 'articuno', '閃電鳥': 'zapdos', '火焰鳥': 'moltres',
+  '迷你龍': 'dratini', '哈克龍': 'dragonair', '快龍': 'dragonite',
+  '超夢': 'mewtwo', '夢幻': 'mew',
+}
+
+// 建立英文到中文的反向映射
+const POKEMON_NAMES_EN: Record<string, string> = Object.fromEntries(
+  Object.entries(POKEMON_NAMES_ZH).map(([zh, en]) => [en, zh])
+)
+
 const ALL_TYPES = Object.keys(TYPE_COLORS)
 
 const PokemonTypeChartPage: React.FC = () => {
@@ -105,14 +183,58 @@ const PokemonTypeChartPage: React.FC = () => {
     return effectiveness
   }
 
-  const searchPokemon = async () => {
-    if (!pokemonName.trim()) return
+  const [searchSuggestions, setSearchSuggestions] = useState<string[]>([])
+  const [showSuggestions, setShowSuggestions] = useState(false)
+
+  // 模糊搜尋函數
+  const performFuzzySearch = (query: string) => {
+    if (!query.trim()) {
+      setSearchSuggestions([])
+      setShowSuggestions(false)
+      return
+    }
+
+    const searchTerm = query.toLowerCase().trim()
+    const matches: string[] = []
+
+    // 搜尋中文名稱匹配
+    Object.keys(POKEMON_NAMES_ZH).forEach(zhName => {
+      if (zhName.includes(searchTerm)) {
+        matches.push(zhName)
+      }
+    })
+
+    // 搜尋英文名稱匹配
+    Object.keys(POKEMON_NAMES_EN).forEach(enName => {
+      if (enName.includes(searchTerm) && !matches.includes(POKEMON_NAMES_EN[enName])) {
+        matches.push(POKEMON_NAMES_EN[enName])
+      }
+    })
+
+    // 限制顯示數量
+    setSearchSuggestions(matches.slice(0, 10))
+    setShowSuggestions(matches.length > 0)
+  }
+
+  // 搜尋寶可夢
+  const searchPokemon = async (name?: string) => {
+    const targetName = name || pokemonName
+    if (!targetName.trim()) return
+    
     setSearchingPokemon(true)
     setPokemonError(null)
     setFoundPokemon(null)
+    setShowSuggestions(false)
     
     try {
-      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName.toLowerCase().trim()}`)
+      let searchName = targetName.toLowerCase().trim()
+      
+      // 檢查是否是中文名稱，如果是則轉換為英文名稱
+      if (POKEMON_NAMES_ZH[targetName.trim()]) {
+        searchName = POKEMON_NAMES_ZH[targetName.trim()]
+      }
+      
+      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${searchName}`)
       if (!response.ok) throw new Error('寶可夢未找到')
       const data = await response.json()
       setFoundPokemon(data)
@@ -196,22 +318,46 @@ const PokemonTypeChartPage: React.FC = () => {
                 寶可夢搜尋
               </h3>
               
-              <div className="flex gap-2 mb-4">
-                <input
-                  type="text"
-                  value={pokemonName}
-                  onChange={(e) => setPokemonName(e.target.value)}
-                  onKeyPress={(e) => e.key === 'Enter' && searchPokemon()}
-                  placeholder="輸入寶可夢名稱 (英文)"
-                  className="flex-1 px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                />
-                <button
-                  onClick={searchPokemon}
-                  disabled={searchingPokemon}
-                  className="btn btn-primary px-4 py-2 disabled:opacity-50"
-                >
-                  {searchingPokemon ? '搜尋中...' : '搜尋'}
-                </button>
+              <div className="relative mb-4">
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    value={pokemonName}
+                    onChange={(e) => {
+                      setPokemonName(e.target.value)
+                      performFuzzySearch(e.target.value)
+                    }}
+                    onKeyPress={(e) => e.key === 'Enter' && searchPokemon()}
+                    onFocus={() => pokemonName && performFuzzySearch(pokemonName)}
+                    placeholder="輸入寶可夢名稱 (中文或英文)"
+                    className="flex-1 px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  />
+                  <button
+                    onClick={() => searchPokemon()}
+                    disabled={searchingPokemon}
+                    className="btn btn-primary px-4 py-2 disabled:opacity-50"
+                  >
+                    {searchingPokemon ? '搜尋中...' : '搜尋'}
+                  </button>
+                </div>
+
+                {/* 建議列表 */}
+                {showSuggestions && (
+                  <div className="absolute z-10 w-full mt-1 bg-white border border-neutral-300 rounded-lg shadow-lg max-h-60 overflow-y-auto">
+                    {searchSuggestions.map((suggestion, index) => (
+                      <button
+                        key={index}
+                        onClick={() => {
+                          setPokemonName(suggestion)
+                          searchPokemon(suggestion)
+                        }}
+                        className="w-full text-left px-4 py-2 hover:bg-neutral-100 transition-colors"
+                      >
+                        {suggestion}
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {pokemonError && (
@@ -235,7 +381,7 @@ const PokemonTypeChartPage: React.FC = () => {
                       />
                     )}
                     <div>
-                      <h4 className="text-xl font-bold capitalize">{foundPokemon.name}</h4>
+                      <h4 className="text-xl font-bold">{POKEMON_NAMES_EN[foundPokemon.name] || foundPokemon.name}</h4>
                       <div className="flex gap-2 mt-3">
                         {foundPokemon.types.map((t, i) => (
                           <span
